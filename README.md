@@ -53,7 +53,7 @@ cd ~/dssat-csm-os/build/bin
 ./dscsm048 B ~/dssat_data/Experiments/MZCER047.MZX
 
 cd ~/dssat_data/Maize
-$ ../dscm048 A BRPI0202.MZX
+  ../dscm048 A BRPI0202.MZX
 
 ```
 You DSSATPRO.48L must contain the correct paths to the data and executable, otherwise 
