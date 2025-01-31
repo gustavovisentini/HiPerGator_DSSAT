@@ -30,21 +30,31 @@ make
 ```
 
 ## 4️⃣ Set Up DSSAT Data Repository
+
 ```bash
 cd ~
 git clone https://github.com/DSSAT/dssat-csm-data.git
-mkdir -p ~/DSSAT_DATA
-mv dssat-csm-data/* ~/DSSAT_DATA
-export DSSAT_DATA=~/DSSAT_DATA
-echo "export DSSAT_DATA=~/DSSAT_DATA" >> ~/.bashrc
+mkdir -p ~/dssat_data
+mv dssat-csm-data/* ~/dssat_data
+export dssat_data=~/dssat_data
+echo "export dssat_data=~/dssat_data" >> ~/.bashrc
 source ~/.bashrc
+cd dssat_data
+cp -R ~/projects/dssat_csm_os/Data/* .
+cp -R ~/projects/dssat_csm_os/build/bin/dscm048 .
 ```
 
 ## 5️⃣ Run a Test Simulation
 ```bash
 cd ~/dssat-csm-os/build/bin
-./dscsm048 B ~/DSSAT_DATA/Experiments/MZCER047.MZX
+./dscsm048 B ~/dssat_data/Experiments/MZCER047.MZX
+
+cd ~/dssat_data/Maize
+$ ../dscm048 A BRPI0202.MZX
+
 ```
+You DSSATPRO.48L must contain the correct paths to the data and executable, otherwise 
+all .WTH, .SOIL, .CUL, .ECO, .SPE and other files must be in the Maize folder for example
 
 ## 📝 Notes
 - Ensure you have the necessary permissions to execute the DSSAT binaries.
