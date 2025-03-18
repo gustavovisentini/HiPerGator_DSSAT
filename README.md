@@ -52,7 +52,7 @@ cp -R ~/projects/dssat_csm_os/build/bin/dscm048 .
 ## 5️⃣ Run a Test Simulation
 ```bash
 cd ~/dssat-csm-os/build/bin
-./dscsm048 B ~/dssat_data/Experiments/MZCER047.MZX
+./dscsm048 B ~/dssat_data/Experiments/MZCER048.MZX
 
 cd ~/dssat_data/Maize
   ../dscm048 A BRPI0202.MZX
