@@ -11,7 +11,7 @@ This guide provides a step-by-step process to install **DSSAT-CSM-OS** and set u
 ## 1️⃣ Access HiPerGator
 Log in via SSH:
 ```bash
-ssh your_username@hpg.rc.ufl.edu
+ssh yourusername@hpg.rc.ufl.edu
 ```
 
 ## 2️⃣ Load Required Modules
